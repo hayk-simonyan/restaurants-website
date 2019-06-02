@@ -4,9 +4,9 @@
     <div class="jumbotron text-center">
         <div class="row d-flex justify-content-center">
             <div class="col-12 col-lg-6">
-                <h1 class="mb-5" style="text-align: center">Add new comment to <%= campground.name %></h1>
+                <h1 class="mb-5" style="text-align: center">Add new comment to <%= restaurant.name %></h1>
                 
-                <form action="/campgrounds/<%= campground._id %>/comments" method="POST">
+                <form action="/restaurants/<%= restaurant._id %>/comments" method="POST">
                     <div class="form-group">
                         <input class="form-control" type="text" name="comment[text]" placeholder="text">
                     </div>
@@ -15,7 +15,7 @@
                     </div>
                 </form>
                 
-                <a href="/campgrounds">Go Back</a>
+                <a href="/restaurants">Go Back</a>
                 
             </div>
         </div>
