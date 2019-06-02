@@ -1,0 +1,32 @@
+<%- include ../partials/header %>
+
+<div class="container">
+    <div class="jumbotron text-center">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-lg-6">
+                <h1 class="mb-5" style="text-align: center">Edit <%= restaurant.name %></h1>
+                <form action="/restaurants/<%= restaurant._id %>?_method=PUT" method="POST">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="restaurant[name]" value="<%= restaurant.name %>">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="number" name="restaurant[price]" value="<%= restaurant.price %>" min="0.01" step="0.01">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="restaurant[image]" value="<%= restaurant.image %>">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="restaurant[description]" value="<%= restaurant.description %>">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-large btn-success">Submit!</button>
+                    </div>
+                </form>
+                
+                <a href="/restaurants">Go Back</a> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include ../partials/footer %>

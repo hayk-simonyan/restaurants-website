@@ -1,0 +1,56 @@
+<%- include ../partials/header %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <p class="lead my-3 mx-3">Restaurant Info</p>
+            <div class="list-group">
+                <li class="list-group-item act">About</li>
+                <li class="list-group-item">Feedback</li>
+                <li class="list-group-item">Directions</li>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="card">
+                <img class="card-img-top img-thumbnail img-responsive p-0" src="<%= restaurant.image %>">
+                <div class="card-body">
+                    <h4 class="float-right">Starting from/$<%= restaurant.price %></h4>
+                    <h4><a href=""><%= restaurant.name %></a></h4>
+                    <p><%= restaurant.description %></p>
+                    <p><em>Created By <%= restaurant.author.username %></em></p>
+                    <% if(currentUser && restaurant.author.id.equals(currentUser._id)) { %>
+                        <a class="btn btn-sm btn-warning" href="/restaurants/<%= restaurant._id %>/edit">Edit</a>
+                        <form id="delete-form" action="/restaurants/<%= restaurant._id %>?_method=DELETE" method="POST">
+                            <button class="btn btn-sm btn-danger">Delete</button>
+                        </form>
+                    <% } %>
+                </div>
+            </div>
+            <div class="card mt-2 p-3">
+                <div class="text-right mb-4">
+                    <a class="btn btn-success" href="/restaurants/<%= restaurant._id %>/comments/new">Add New Comment</a>
+                </div>
+                <% restaurant.comments.forEach(function(comment) { %>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <strong><%= comment.author.username %></strong>
+                            <span class="float-right">10 days ago</span>
+                            <p><%= comment.text %></p>
+                            <% if(currentUser && comment.author.id.equals(currentUser._id)) { %>
+                                <a  class="btn btn-sm btn-warning" 
+                                    href="/restaurants/<%= restaurant._id %>/comments/<%= comment._id %>/edit">
+                                    Edit
+                                </a>
+                                <form id="delete-form" action="/restaurants/<%= restaurant._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
+                                    <button class="btn btn-sm btn-danger">Delete</button>
+                                </form>
+                            <% } %>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include ../partials/footer %>
