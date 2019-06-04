@@ -1,0 +1,17 @@
+.navbar {
+    background-color: #2B7A77 !important;
+}
+
+.navbar li a {
+    color: #DEF2F1 !important;
+}
+.navbar li a:hover {
+    color: #FFFFFF !important;
+}
+.navbar li a:active {
+    color: #FFFFFF !important;
+}
+
+.navbar-brand {
+    color: #FFFFFF !important
+}
