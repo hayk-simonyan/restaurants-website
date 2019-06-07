@@ -1,123 +1,126 @@
 body {
-    background-color: #FFFFFF
+  background-color: #ffffff;
 }
 
 h1 {
-    color: #2B7A77
-}
-h4 {
-    color: #2B7A77
-}
-h4 a {
-    color: #2B7A77
-}
-h4 a:hover {
-    color: #3AAFA9
-}
-h4 a:active {
-    color: #3AAFA9
+  color: #2b7a77;
 }
 
-.btn:focus,.btn:active, .btn:hover {
-    outline: none !important;
-    box-shadow: none !important;
+h4 {
+  color: #2b7a77;
+}
+h4 a {
+  color: #2b7a77;
+}
+h4 a:hover {
+  color: #3aafa9;
+}
+h4 a:active {
+  color: #3aafa9;
+}
+
+.btn:focus,
+.btn:active,
+.btn:hover {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .col-md-9 .card img {
-    width: 100%;
-    max-height: 600px;    
-    background-size: cover;
+  width: 100%;
+  max-height: 600px;
+  background-size: cover;
 }
 
 .col-md-3 .card img {
-    max-height: 250px;
+  max-height: 250px;
 }
 
 .jumbotron {
-    background-color: #DEF2F1
+  background-color: #def2f1;
 }
 
 #delete-form {
-    display: inline;
+  display: inline;
 }
 
 .card {
-    background-color: #FFFFFF
+  background-color: #ffffff;
 }
 
 .card img {
-    width: 100%;
-    height: 10rem;
-    object-fit: cover;
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
 }
 
 .bg-lgreen {
-    background-color: #DEF2F1;
+  background-color: #def2f1;
 }
 .bg-green {
-    background-color: #3AAFA9
+  background-color: #3aafa9;
 }
 .bg-dgreen {
-    background-color: #2B7A77
+  background-color: #2b7a77;
 }
 .bg-black {
-    background-color: #17242A
+  background-color: #17242a;
 }
 .bg-white {
-    background-color: #FFFFFF
+  background-color: #ffffff;
 }
 
 .btn-success {
-    background-color: #3AAFA9 !important;
-    color: #FFFFFF !important
+  background-color: #3aafa9 !important;
+  color: #ffffff !important;
 }
 .btn-success:hover {
-    background-color: #2B7A77 !important;
-    color: #DEF2F1 !important
+  background-color: #2b7a77 !important;
+  color: #def2f1 !important;
 }
 .btn-success:active {
-    background-color: #2B7A77 !important;
-    color: #DEF2F1 !important
+  background-color: #2b7a77 !important;
+  color: #def2f1 !important;
 }
 
 .btn-primary {
-    background-color: #DEF2F1 !important;
-    border: 1px solid #DEF2F1 !important;
-    color: #2B7A77 !important
+  background-color: #def2f1 !important;
+  border: 1px solid #def2f1 !important;
+  color: #2b7a77 !important;
 }
 .btn-primary:hover {
-    background-color: #DEF2F1 !important;
-    border: 1px solid #DEF2F1 !important;
-    color: #3AAFA9 !important
+  background-color: #def2f1 !important;
+  border: 1px solid #def2f1 !important;
+  color: #3aafa9 !important;
 }
 .btn-primary:active {
-    background-color: #DEF2F1 !important;
-    border: 1px solid #DEF2F1 !important;
-    color: #3AAFA9 !important
+  background-color: #def2f1 !important;
+  border: 1px solid #def2f1 !important;
+  color: #3aafa9 !important;
 }
 
 .lead {
-    color: #2B7A77
+  color: #2b7a77;
 }
 
 .list-group-item {
-    background-color: #FFFFFF !important;
-    color: #2B7A77 !important
+  background-color: #ffffff !important;
+  color: #2b7a77 !important;
 }
 .list-group-item:hover {
-    background-color: #DEF2F1 !important;
-    color: #3AAFA9 !important
+  background-color: #def2f1 !important;
+  color: #3aafa9 !important;
 }
 .list-group-item:active {
-    background-color: #DEF2F1 !important;
-    color: #3AAFA9 !important
+  background-color: #def2f1 !important;
+  color: #3aafa9 !important;
 }
 .act {
-    background-color: #DEF2F1 !important;
-    color: #3AAFA9 !important
+  background-color: #def2f1 !important;
+  color: #3aafa9 !important;
 }
 
 .col-md-9 .card img {
-    background-size: cover;
-    height: 100%;
+  background-size: cover;
+  height: 100%;
 }

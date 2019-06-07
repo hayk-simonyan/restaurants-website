@@ -1,17 +1,19 @@
 .navbar {
-    background-color: #2B7A77 !important;
+  background-color: #2b7a77 !important;
 }
 
 .navbar li a {
-    color: #DEF2F1 !important;
+  color: #def2f1 !important;
 }
+
 .navbar li a:hover {
-    color: #FFFFFF !important;
+  color: #ffffff !important;
 }
+
 .navbar li a:active {
-    color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 .navbar-brand {
-    color: #FFFFFF !important
+  color: #ffffff !important;
 }
