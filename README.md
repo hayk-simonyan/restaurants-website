@@ -6,11 +6,11 @@ Built with Node, Express.js, Bootstrap, MongoDB.
 
 ## Getting Started
 
-1. Clone this repo
+1. clone this repo
+1. connect this app to your mongoDB server in `app.js`
 1. run `npm install`
 1. run `npm start`
 
-\*** You should connect this app to your mongoDB server
 
 ![img1](screenshots/1.png)
 ![img1](screenshots/2.png)
